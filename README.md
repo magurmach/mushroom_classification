@@ -12,6 +12,12 @@ feature values as numerical code.
 70/30 split was used to train and test the model. Due to lack of dediated test
 dataset, better generalization error couldn't be calculated.
 
+Besides local implementation (captured here), the data set was fed to GCP AutoMl.
+To be able to feed it to AutoML, we needed to change the column names  of the
+dataset in Kaggle. Guidelines for supported schema can be found
+[here](https://cloud.google.com/bigquery/docs/schemas#column_names). By default
+a 80/10/10 split is choses as training/validation/test dataset. 
+
 ## Performance evaluation
 
 #### Decision tree performance:
@@ -42,6 +48,22 @@ Naive Bayes performance:
 Accuracy:  0.9540607054963085
 F1 score:  0.953842651059095
 ```
+
+#### AutoML from GCP:
+
+Once the properly formatted dataset was uploaded, training the model in AutoML
+is straightforward in GCP. No model selection or alike information was needed
+as input.
+
+|---------- |------|
+| PR AUC    | 1    |
+| ROC AUC   | 1    |
+| Log loss  | 0    |
+| F1 Score  | 1    |
+| Precision | 100% |
+| Recall    | 100% |
+
+###### Correctness and other data from GCP AutoML
 
 ## Verditct
 
