@@ -55,13 +55,14 @@ Once the properly formatted dataset was uploaded, training the model in AutoML
 is straightforward in GCP. No model selection or alike information was needed
 as input.
 
-|---------- |------|
-| PR AUC    | 1    |
-| ROC AUC   | 1    |
-| Log loss  | 0    |
-| F1 Score  | 1    |
-| Precision | 100% |
-| Recall    | 100% |
+| Metric    | Score |
+| ----------| ----- |
+| PR AUC    | 1     |
+| ROC AUC   | 1     |
+| Log loss  | 0     |
+| F1 Score  | 1     |
+| Precision | 100%  |
+| Recall    | 100%  |
 
 ###### Correctness and other data from GCP AutoML
 
