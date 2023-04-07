@@ -65,6 +65,10 @@ as input.
 
 ###### Correctness and other data from GCP AutoML
 
+![curves from AutoML](https://github.com/magurmach/mushroom_classification/blob/main/GCP%20AutoML/GCP_ml_metric_figs.png?raw=true)
+
+![feature importance from AutoML](https://github.com/magurmach/mushroom_classification/blob/main/GCP%20AutoML/GCP_ml_feature_importance.png?raw=true)
+
 ## Verditct
 
 With minimal processing, both Naive Bayes and Decision Tree perfromed
