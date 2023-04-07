@@ -1,11 +1,9 @@
 import pandas as pd
-from matplotlib import pyplot as plt
 from dataclasses import dataclass
 from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import CategoricalNB
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.tree import plot_tree
 from sklearn import metrics
 
 
