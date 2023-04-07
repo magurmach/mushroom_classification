@@ -9,10 +9,8 @@ Assess performance of decision tree and naive bayes binary classifier of
 value out of the box. Pandas was used and label encoder was used to encode the
 feature values as numerical code.
 
-With minimal processing, both Naive Bayes and Decision Tree perfromed
-relatively well.
-
-However, decision tree seemed like a natural fit.
+70/30 split was used to train and test the model. Due to lack of dediated test
+dataset, better generalization error couldn't be calculated.
 
 ## Performance evaluation
 
@@ -46,3 +44,9 @@ F1 score:  0.953842651059095
 ```
 
 ## Verditct
+
+With minimal processing, both Naive Bayes and Decision Tree perfromed
+relatively well.
+
+However, decision tree seemed like a natural fit. With no depth limitation, the
+decision tree yielded 100% accurance and F1 score.
